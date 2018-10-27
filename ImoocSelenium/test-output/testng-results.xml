@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="6826" started-at="2018-10-27T14:05:44Z" finished-at="2018-10-27T14:05:51Z">
+    <groups>
+    </groups>
+    <test name="ImoocSelenium" duration-ms="6826" started-at="2018-10-27T14:05:44Z" finished-at="2018-10-27T14:05:51Z">
+      <class name="com.testCase.loginTest">
+        <test-method status="PASS" signature="getLoginHome()[pri:0, instance:com.testCase.loginTest@193f604a]" name="getLoginHome" duration-ms="6377" started-at="2018-10-27T22:05:44Z" finished-at="2018-10-27T22:05:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoginHome -->
+        <test-method status="PASS" signature="testLigin()[pri:0, instance:com.testCase.loginTest@193f604a]" name="testLigin" duration-ms="437" started-at="2018-10-27T22:05:50Z" depends-on-methods="com.testCase.loginTest.getLoginHome" finished-at="2018-10-27T22:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLigin -->
+      </class> <!-- com.testCase.loginTest -->
+    </test> <!-- ImoocSelenium -->
+  </suite> <!-- Default Suite -->
+</testng-results>
