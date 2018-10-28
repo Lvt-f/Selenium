@@ -21,8 +21,10 @@ public class getByLocator {
             return By.name(locatorValue);
         }else if(locatorType.equals("className")){
             return By.className(locatorValue);
-        }else {
+        }else if (locatorType.equals("xpath")){
             return By.xpath(locatorValue);
+        }else {
+            return By.linkText(locatorValue);
         }
     }
 }

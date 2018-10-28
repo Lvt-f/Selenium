@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
+<!--
+base-
+business-用于业务层的具体的操作
+page-页面层，用于定位页面元素
+handle-操作层，用于操作页面元素，比如：click()
+testCase-测试用例层，用于编写测试用例
+util-工具类-用于存储一些例的工具类(比如读取配置文件)
+mishihisi-测试类，用于编写一些测试用的脚本
+-->
 <suite name="UI自动化测试套件">
     <test name="测试模块">
         <classes>
@@ -9,6 +17,12 @@
                 <include name="getLoginHome"/>
 
                 <include name="testLigin"/>
+
+                <include name="TestBuyNow"/>
+
+                <include name="TestSureOrder"/>
+
+                <include name="testGoPay"/>
 
             </methods>
         </class>

@@ -1,6 +1,8 @@
-package com.page;
+package com.handle;
 
 import com.base.DriverBase;
+import com.page.loginPage;
+
 /**
  * 操作层
  * */

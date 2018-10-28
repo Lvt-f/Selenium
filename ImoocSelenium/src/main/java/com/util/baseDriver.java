@@ -1,4 +1,4 @@
-package com.mushihsi;
+package com.util;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -11,10 +11,10 @@ import java.io.IOException;
 
 public class baseDriver {
     WebDriver driver ;
- public baseDriver(){
-     System.setProperty("webdriver.chrome.driver","/Applications/Google Chrome.app/Contents/MacOS/chromedriver");
-     driver = new ChromeDriver();
- }
+    public baseDriver(){
+         System.setProperty("webdriver.chrome.driver","/Applications/Google Chrome.app/Contents/MacOS/chromedriver");
+        driver = new ChromeDriver();
+    }
     /**
      * 截图
      * **/
