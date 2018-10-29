@@ -46,13 +46,18 @@ public class loginTest extends CaseBase{
     @Test(dependsOnMethods = {"getLoginHome"})
     public void testLigin(){
         //logger.info("11111");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         loginPro.login("13780648319","feige6688");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.get("http://coding.imooc.com/class/74.html");
+        driver.get("https://coding.imooc.com/class/187.html");
     }
     /**
     * 添加购物车

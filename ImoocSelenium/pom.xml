@@ -21,6 +21,9 @@
     </build>
 
     <dependencies>
+        <!--
+           testng包
+       -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -31,6 +34,9 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+        <!--
+          seleniumhq包
+      -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>

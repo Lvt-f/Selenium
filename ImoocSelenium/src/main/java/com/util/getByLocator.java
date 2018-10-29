@@ -23,6 +23,8 @@ public class getByLocator {
             return By.className(locatorValue);
         }else if (locatorType.equals("xpath")){
             return By.xpath(locatorValue);
+        }else if(locatorType.equals("li")){
+            return By.tagName("locatorValue");
         }else {
             return By.linkText(locatorValue);
         }

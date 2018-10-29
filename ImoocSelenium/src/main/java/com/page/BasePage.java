@@ -5,12 +5,15 @@ import com.util.getByLocator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 
 /**
  * pag存储页面共用的基类一些方法
  * */
 public class BasePage {
     public DriverBase driver;
+    public WebElement element;
     // 构造函数
     public BasePage(DriverBase driver){
         this.driver = driver;
@@ -20,9 +23,18 @@ public class BasePage {
      * @param by by
      * */
     public WebElement element(By by){
-        WebElement element = driver.findElement(by);
+         element = driver.findElement(by);
         return element;
     }
+    /**
+     * 定位Elements方法
+     * @param by by
+     * */
+    public WebElement elements(By by,int y){
+        List<WebElement> elements = element.findElements(by);
+        return elements.get(y);
+    }
+
     /**
      * 封装点击
      * */

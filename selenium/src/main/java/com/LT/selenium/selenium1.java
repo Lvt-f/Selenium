@@ -29,9 +29,9 @@ public class selenium1 {
         //获取地址
         driver.get("https://www.imooc.com/user/newlogin/from_url/");
         //1。使用tagName定位
-        driver.findElement(By.tagName("input")).sendKeys("13780648319");
+        driver.findElement(By.tagName("input")).sendKeys("123");
         //2。使用name定位
-        driver.findElement(By.name("password")).sendKeys("feige6688");
+        driver.findElement(By.name("password")).sendKeys("123");
         //记住登陆
         driver.findElement(By.id("auto-signin")).click();
         //3。使用链接
@@ -39,8 +39,8 @@ public class selenium1 {
         //4。使用链接登陆
         driver.findElement(By.partialLinkText("直接")).click();
         //需要重新设置
-        driver.findElement(By.tagName("input")).sendKeys("13780648319");
-        driver.findElement(By.name("password")).sendKeys("feige6688");
+        driver.findElement(By.tagName("input")).sendKeys("123");
+        driver.findElement(By.name("password")).sendKeys("123");
         //5。使用className登陆
         driver.findElement(By.className("moco-btn")).click();
 

@@ -4,6 +4,7 @@ package com.base;
  * */
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.server.handler.interactions.touch.Down;
 
 public class DriverBase {
 
@@ -49,6 +50,13 @@ public class DriverBase {
         }
         String window ="window.scrollTo(0,"+windowHight+")";
        ((JavascriptExecutor) driver).executeScript(window);
+    }
+    /**
+     * 滑动到底部
+     * */
+    public void RollDown(){
+        Actions action =new Actions(driver);
+        action.sendKeys(Keys.END).perform();//下拉到底部
     }
     /**
      * 页面放大

@@ -17,6 +17,7 @@ public class orderPayPagePro {
     public void orderPayPro(){
 
         orderPayPageHandle.clickAliPay();
+        driver.RollDown();
         orderPayPageHandle.clickPayElement();
 
 //        String orderName = orderPayPageHandle.getOrderName();
