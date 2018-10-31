@@ -88,6 +88,12 @@ public class DriverBase {
     public void switchToMode(){
         driver.switchTo().activeElement();
     }
+    /**
+     * 推出
+     * */
+    public void close(){
+        driver.close();
+    }
 
 
 

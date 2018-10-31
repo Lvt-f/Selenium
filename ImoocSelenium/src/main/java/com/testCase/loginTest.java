@@ -5,6 +5,9 @@ import com.business.CoursePagePro;
 import com.business.LoginPro;
 import com.business.SureOrderPagePro;
 import com.business.orderPayPagePro;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import java.util.logging.Logger;
 
@@ -18,8 +21,9 @@ public class loginTest extends CaseBase{
     public orderPayPagePro opp;
 
     static Logger logger = Logger.getLogger(String.valueOf(loginTest.class));
-
-    public loginTest(){
+    //运用此类时第一次调用，但是只运行一次
+    @BeforeClass
+    public void loginTest1(){
         //传入浏览器
         this.driver =InitDriver("chrome");
         loginPro = new LoginPro(driver);
@@ -44,14 +48,16 @@ public class loginTest extends CaseBase{
      * 登陆流程
      * */
     @Test(dependsOnMethods = {"getLoginHome"})
-    public void testLigin(){
+    //Parameters参数化
+    @Parameters({"username","pass"})
+    public void testLigin(String username,String pass){
         //logger.info("11111");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        loginPro.login("13780648319","feige6688");
+        loginPro.login(username,pass);
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
