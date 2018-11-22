@@ -13,7 +13,7 @@ public class baseDriver {
     WebDriver driver ;
     public baseDriver(){
          System.setProperty("webdriver.chrome.driver","/Applications/Google Chrome.app/Contents/MacOS/chromedriver");
-        driver = new ChromeDriver();
+         driver = new ChromeDriver();
     }
     /**
      * 截图

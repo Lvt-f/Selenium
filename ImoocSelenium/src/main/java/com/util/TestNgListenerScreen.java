@@ -18,7 +18,7 @@ public class TestNgListenerScreen extends TestListenerAdapter {
      * 传递的作用
      * */
     private void tackScreenShot(ITestResult iTestResult){
-       baseDriver b = (baseDriver) iTestResult.getInstance();
+         baseDriver b = (baseDriver) iTestResult.getInstance();
         b.tackScreenShot();
     }
 

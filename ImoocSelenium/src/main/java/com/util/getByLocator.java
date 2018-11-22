@@ -24,7 +24,7 @@ public class getByLocator {
         }else if (locatorType.equals("xpath")){
             return By.xpath(locatorValue);
         }else if(locatorType.equals("li")){
-            return By.tagName("locatorValue");
+            return By.tagName(locatorValue);
         }else {
             return By.linkText(locatorValue);
         }
